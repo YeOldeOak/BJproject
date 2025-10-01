@@ -5,6 +5,9 @@ class Card:
     
     def __repr__(self):
         return f"{self.value} of {self.suit}"
+    
+    def __iter__(self):
+        return iter((self.value, self.suit))
 
 suits = ['Diamonds','Clubs','Hearts','Spades']
 values = ['2','3','4','5','6','7','8','9','10','Jack','Queen','King','Ace']
